@@ -84,3 +84,27 @@ h1, h2 {
     display: inline-block;
     padding: 5px 15px;
 }
+
+/*#changingText:before{*/
+    /*content: '';*/
+    /*animation: changeText infinite linear 9s;*/
+/*}*/
+
+/*@keyframes changeText {*/
+    /*0%{*/
+        /*content: 'Back-end';*/
+    /*}*/
+    /*50%{*/
+        /*content: 'Front-end';*/
+    /*}*/
+    /*100%{*/
+        /*content: 'Full-stack';*/
+    /*}*/
+/*}*/
+
+/*@keyframes test {*/
+
+    /*from {width: 0}*/
+    /*to {width: 100%}*/
+
+/*}*/
