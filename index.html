@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StrikerSK</title>
-    <meta name="description" content="Kristian Hanus' personal website">
+    <head>
+        <title>StrikerSK</title>
 
-    <meta name="keywords" content="kristian,hanus,strikersk,web,developer,personal">
-    <meta charset="utf-8">
-    <meta name="author" content="Kristian Hanus">
-    <base href="/">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css" type="text/css">
-    <link rel="stylesheet" href="/index.css" type="text/css">
-
-    <script src="JS/jquery.min.js"></script>
-    <script src="JS/typed.min.js"></script>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138411520-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-138411520-2');
-    </script>
-
-</head>
-
-<body>
-
-    <div class="layout">
-    
-        <!--Navbar-->
-        <nav class="nav">
-            <section class="nav-section index"><a class="link" href="/">StrikerSK.com</a></section>
-            <section class="nav-section about"><a class="link" href="/about">About me</a></section>
-        </nav>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kristian Hanus' personal website">
+        <meta name="keywords" content="kristian,hanus,strikersk,web,developer,personal">
+        <meta name="author" content="Kristian Hanus">
         
-        <main class="main">
-            <div class="main-container main-container-centered">
+        <link rel="stylesheet" href="/css/index.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+        <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.0/normalize.css" type="text/css">
+
+        <script src="JS/jquery.min.js"></script>
+        <script src="JS/typed.min.js"></script>
+    </head>
+
+    <body>
+        <div class="layout">
+            <!--Navbar-->
+            <nav class="nav">
+                <section class="nav-section index"><a class="link" href="/">StrikerSK.com</a></section>
+                <section class="nav-section about"><a class="link" href="/about">About me</a></section>
+            </nav>
             
-                <h1>Kristian Hanus</h1>
-                <h2><span id="changingText"></span> Developer</h2>
-                <ul class="main-links">
-                    <li><a class="link" href="https://pid-visualised.herokuapp.com/" target="_blank">Bachelor's project</a></li>
-                    <li><a class="link" href="https://github.com/StrikerSK/" target="_blank">GitHub</a></li>
-                    <li><a class="link" href="https://www.linkedin.com/in/khanus/" target="_blank">LinkedIn</a></li>
-                </ul>
-            </div>
-        </main>
-    </div>
+            <main class="main">
+                <div class="main-container main-container-centered">
+                    <h1>Kristian Hanus</h1>
+                    <h2><span id="changingText"></span> Developer</h2>
+                    <ul class="main-links">
+                        <li><a class="link" href="https://pid-visualised.herokuapp.com/" target="_blank">Bachelor's project</a></li>
+                        <li><a class="link" href="https://github.com/StrikerSK/" target="_blank">GitHub</a></li>
+                        <li><a class="link" href="https://www.linkedin.com/in/khanus/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </main>
+        </div>
 
-    <script type="text/javascript">
-        new Typed('#changingText', {
-            strings: ["Front-end", "Back-end", "Java", "GO"],
-            loop: true,
-            typeSpeed: 150,
-            backSpeed: 75,
-            backDelay: 3000,
-        });
-    </script>
+        <script type="text/javascript">
+            new Typed('#changingText', {
+                strings: ["Frontend", "Backend", "Java", "Golang", "JavaScript"],
+                loop: true,
+                typeSpeed: 150,
+                backSpeed: 75,
+                backDelay: 3000,
+            });
+        </script>
 
-</body>
+    </body>
 </html>
