@@ -1,115 +1,148 @@
-body {
-    background: #EEE;
-    font-family: 'Fira Mono';
-    letter-spacing: 0.025em;
-    line-height: 1.5em;
-    font-size: 0.80em;
+* {
+  box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
+body {
+  background: #EEE;
+  font-family: "Fira Mono";
+  letter-spacing: 0.025em;
+  line-height: 1.5em;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.85em;
+  }
 }
 
 h1, h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* Layout */
-.layout {    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
 }
 
 /* Components */
 .link {
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(#000, #000);
+  background-position: 0 100%;
+  /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+  /*change after the size immediately*/
 }
 
 .link:hover {
-    text-decoration: underline;
+  cursor: default;
+  background-position: 100% 100%;
+  /*OR bottom right*/
+  background-size: 100% 2px;
 }
 
-/* Navbar */
+.un {
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#000, #000);
+  background-position: 0 100%;
+  /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+  /*change after the size immediately*/
+}
+
+/************** NAVBAR **************/
 .nav {
-    position: relative;
-    width: 100vw;
-    height: 4em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-section {
-    display: inline-block;
-    padding: 0 30px;
-    height: 100%;
-    line-height: 4em;
-    font-weight: bold;
+  display: inline-block;
+  padding: 0 30px;
+  height: 100%;
+  line-height: 4em;
+  font-weight: bold;
 }
 
 .nav-section.index {
-    float: left;
+  float: left;
 }
 
 .nav-section.about {
-    float: right;
+  float: right;
 }
 
+/************** NAVBAR **************/
 /* Main */
 .main {
-    flex: 1;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 20px;
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .main-container {
-    max-width: 35em;
+  max-width: 35em;
 }
 
 .main-container-centered {
-    text-align: center;
+  text-align: center;
 }
 
 .main-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .main-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
 }
 
 .main-links li {
-    display: inline-block;
-    padding: 5px 15px;
+  display: inline-block;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 768px) {
+  .main-links li {
+    padding: 10px 10px;
+  }
 }
 
-/*#changingText:before{*/
-    /*content: '';*/
-    /*animation: changeText infinite linear 9s;*/
-/*}*/
+/************** FOOTER **************/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
 
-/*@keyframes changeText {*/
-    /*0%{*/
-        /*content: 'Back-end';*/
-    /*}*/
-    /*50%{*/
-        /*content: 'Front-end';*/
-    /*}*/
-    /*100%{*/
-        /*content: 'Full-stack';*/
-    /*}*/
-/*}*/
+footer p {
+  margin: 0;
+}
 
-/*@keyframes test {*/
+/************** FOOTER **************/
 
-    /*from {width: 0}*/
-    /*to {width: 100%}*/
-
-/*}*/
+/*# sourceMappingURL=index.css.map */
