@@ -1,3 +1,31 @@
+/************** NAVBAR **************/
+.nav {
+  position: relative;
+  width: 100vw;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-section {
+  display: inline-block;
+  padding: 0 30px;
+  height: 100%;
+  line-height: 4em;
+  font-weight: bold;
+}
+
+.nav-section.index {
+  float: left;
+}
+
+.nav-section.about {
+  float: right;
+}
+
+/************** NAVBAR **************/
 * {
   box-sizing: border-box;
 }
@@ -60,34 +88,6 @@ h1, h2 {
   /*change after the size immediately*/
 }
 
-/************** NAVBAR **************/
-.nav {
-  position: relative;
-  width: 100vw;
-  height: 4em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-section {
-  display: inline-block;
-  padding: 0 30px;
-  height: 100%;
-  line-height: 4em;
-  font-weight: bold;
-}
-
-.nav-section.index {
-  float: left;
-}
-
-.nav-section.about {
-  float: right;
-}
-
-/************** NAVBAR **************/
 /* Main */
 .main {
   flex: 1;
