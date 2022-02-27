@@ -18,10 +18,15 @@ const fetchRepositories = () => {
             tmpLink.classList.add("link");
             tmpListItem.appendChild(tmpLink);
             tmpList.appendChild(tmpListItem);
-        }))
-        .catch(error => console.log('Error', error));
+        })).then(() => {
+            const tmpHeader = document.createElement("h2");
+            tmpHeader.innerHTML = "Created repositories";
 
-    element.appendChild(tmpList);
+            element?.appendChild(tmpHeader)
+            element?.appendChild(tmpList);
+            document.querySelector("#toRemove")?.remove();
+        })
+        .catch(error => console.log('Error', error));
 }
 
 document.addEventListener("DOMContentLoaded", function(event) { 
@@ -29,13 +34,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
         fetchRepositories();
     }
 });
-
-// document.addEventListener('readystatechange',function (ev) {
-//     if (document.readyState === 'interactive') {
-//         if (element) {
-//             fetchRepositories();
-//         }
-//     }
-// })
-
-

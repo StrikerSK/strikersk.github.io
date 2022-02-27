@@ -15,18 +15,17 @@ var fetchRepositories = function () {
         tmpLink.classList.add("link");
         tmpListItem.appendChild(tmpLink);
         tmpList.appendChild(tmpListItem);
-    }); })["catch"](function (error) { return console.log('Error', error); });
-    element.appendChild(tmpList);
+    }); }).then(function () {
+        var _a;
+        var tmpHeader = document.createElement("h2");
+        tmpHeader.innerHTML = "Created repositories";
+        element === null || element === void 0 ? void 0 : element.appendChild(tmpHeader);
+        element === null || element === void 0 ? void 0 : element.appendChild(tmpList);
+        (_a = document.querySelector("#toRemove")) === null || _a === void 0 ? void 0 : _a.remove();
+    })["catch"](function (error) { return console.log('Error', error); });
 };
 document.addEventListener("DOMContentLoaded", function (event) {
     if (document.readyState === 'interactive') {
         fetchRepositories();
     }
 });
-// document.addEventListener('readystatechange',function (ev) {
-//     if (document.readyState === 'interactive') {
-//         if (element) {
-//             fetchRepositories();
-//         }
-//     }
-// })
