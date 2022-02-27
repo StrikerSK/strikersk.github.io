@@ -12,6 +12,7 @@ var fetchRepositories = function () {
         var tmpLink = document.createElement("a");
         tmpLink.innerHTML = item.name;
         tmpLink.setAttribute("href", item.html_url);
+        tmpLink.setAttribute("target", "_blank");
         tmpLink.classList.add("link");
         tmpListItem.appendChild(tmpLink);
         tmpList.appendChild(tmpListItem);
