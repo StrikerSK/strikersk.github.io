@@ -26,7 +26,12 @@ const fetchRepositories = () => {
             element?.appendChild(tmpList);
             document.querySelector("#toRemove")?.remove();
         })
-        .catch(error => console.log('Error', error));
+        .catch(error => {
+            console.log(error);
+            const tmpHeader = document.createElement("h2");
+            tmpHeader.innerHTML = "Cannot fetch repositories";
+            element?.appendChild(tmpHeader);
+        });
 }
 
 document.addEventListener("DOMContentLoaded", function(event) { 

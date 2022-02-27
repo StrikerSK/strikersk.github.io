@@ -22,7 +22,12 @@ var fetchRepositories = function () {
         element === null || element === void 0 ? void 0 : element.appendChild(tmpHeader);
         element === null || element === void 0 ? void 0 : element.appendChild(tmpList);
         (_a = document.querySelector("#toRemove")) === null || _a === void 0 ? void 0 : _a.remove();
-    })["catch"](function (error) { return console.log('Error', error); });
+    })["catch"](function (error) {
+        console.log(error);
+        var tmpHeader = document.createElement("h2");
+        tmpHeader.innerHTML = "Cannot fetch repositories";
+        element === null || element === void 0 ? void 0 : element.appendChild(tmpHeader);
+    });
 };
 document.addEventListener("DOMContentLoaded", function (event) {
     if (document.readyState === 'interactive') {
