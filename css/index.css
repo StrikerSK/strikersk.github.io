@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700");
 /************** NAVBAR **************/
 .nav {
   position: relative;
@@ -15,14 +16,6 @@
   height: 100%;
   line-height: 4em;
   font-weight: bold;
-}
-
-.nav-section.index {
-  float: left;
-}
-
-.nav-section.about {
-  float: right;
 }
 
 /************** NAVBAR **************/
