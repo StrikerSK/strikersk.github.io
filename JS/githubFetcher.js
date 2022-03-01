@@ -3,7 +3,8 @@ var fetchRepositories = function () {
     var tmpList = document.createElement("ul");
     var requestOptions = {
         method: 'GET',
-        redirect: 'follow'
+        redirect: 'follow',
+        mode: 'cors'
     };
     fetch("https://api.github.com/users/StrikerSK/repos", requestOptions)
         .then(function (response) { return response.json(); })

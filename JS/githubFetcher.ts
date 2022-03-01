@@ -3,9 +3,10 @@ const element: Element | null = document.querySelector("#toFill");
 const fetchRepositories = () => {
     const tmpList = document.createElement("ul");
 
-    const requestOptions: any = {
+    const requestOptions: RequestInit = {
         method: 'GET',
-        redirect: 'follow'
+        redirect: 'follow',
+        mode: 'cors'
     };
     
     fetch("https://api.github.com/users/StrikerSK/repos", requestOptions)
