@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700');
 
 $screenThreshold: 768px;
-$textArrivetime: 600ms;
+$textArriveTime: 600ms;
 
 * {
     box-sizing: border-box;
@@ -10,7 +10,7 @@ $textArrivetime: 600ms;
 
 body {
     background: #EEE;
-    font-family: 'Fira Mono';
+    font-family: 'Fira Mono', serif;
     letter-spacing: 0.025em;
     line-height: 1.5em;
     font-size: 0.80em;
@@ -73,7 +73,7 @@ h1, h2 {
     justify-content: center;
     width: 100vw;
     padding: 0 20px;
-    animation: $textArrivetime ease-out 0s 1 slideInFromLeft;
+    animation: $textArriveTime ease-out 0s 1 slideInFromLeft;
 }
 
 .main ul {
@@ -118,7 +118,7 @@ footer {
     justify-content: center;
     margin-top:0.5em;
     margin-bottom:1em;
-    animation: $textArrivetime ease-out 0s 1 slideInFromLeft;
+    animation: $textArriveTime ease-out 0s 1 slideInFromLeft;
 }
 
 footer p {
